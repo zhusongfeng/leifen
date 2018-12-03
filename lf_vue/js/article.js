@@ -52,7 +52,7 @@ $('.input-send').click(function () {
 });
 */
 
- let  comment = new Vue({
+ var  comment = new Vue({
     el: '#app',
     data: {
         //数据类型
@@ -94,7 +94,7 @@ $('.input-send').click(function () {
     },
     methods: {
         init: function () {
-            let self = this;
+            var self = this;
             $.post('https://api.songfuniaops.com/article/ajax-detail', {
                /* token: 'tAOXebNMDdp5Q3YUiLNXwi31PeAIJQsHZBLW6oOe',*/
                 token: self.articleToken,
@@ -172,7 +172,7 @@ $('.input-send').click(function () {
 
         //获取评论列表
         getCommentList:function () {
-            let self = this;
+            var self = this;
             if(self.articleToken){
                 $.post('https://api.songfuniaops.com/article/comments-list', {
                     /* token: 'tAOXebNMDdp5Q3YUiLNXwi31PeAIJQsHZBLW6oOe',*/
@@ -210,8 +210,8 @@ $('.input-send').click(function () {
         },
 
         musicPlay:function () {
-            let self = this;
-            let playerTrack = $("#player-track"),
+            var self = this;
+            var playerTrack = $("#player-track"),
                 playPauseButton = $(".mp-article-music-static"),
                 curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0,  tFlag = false,
                 albumArtworks = ['_1'], trackUrl = [self.musicName],  currIndex = -1;
@@ -260,11 +260,11 @@ $('.input-send').click(function () {
         },
         //点赞功能
         givFabulous:function (id,todo) {
-            let self = this;
+            var self = this;
             todo.zan_num = ++todo.zan_num;
             todo.is_zan = true;
-            let transfer_key = 'ead5de99e3dfe933ef56bd2ff6e08886';
-            let parameter= sha1(('comments_id='+id)+transfer_key);
+            var transfer_key = 'ead5de99e3dfe933ef56bd2ff6e08886';
+            var parameter= sha1(('comments_id='+id)+transfer_key);
             $.post('https://api.songfuniaops.com/article/comments-zan', {
                 token: self.articleToken,
                 comments_id: id,
@@ -279,13 +279,13 @@ $('.input-send').click(function () {
         },
         //取消点赞
         cancelPoints:function (id,todo) {
-            let self = this;
+            var self = this;
             todo.zan_num = --todo.zan_num;
             todo.is_zan = false;
-            let transfer_key = 'ead5de99e3dfe933ef56bd2ff6e08886';
-            let parameter= sha1(('comments_id='+id)+transfer_key);
+            var transfer_key = 'ead5de99e3dfe933ef56bd2ff6e08886';
+            var parameter= sha1(('comments_id='+id)+transfer_key);
             console.log(111111111,parameter)
-            $.post('https://api.songfuniaops.com/article/delete-comments-zan', {
+            $.post('https://api.songfuniaops.com/article/devare-comments-zan', {
                 token: self.articleToken,
                 comments_id: id,
                 sign: parameter,
@@ -297,18 +297,18 @@ $('.input-send').click(function () {
         },
         //点击关注
         clickAttention:function (id) {
-            let self = this;
-            let user_id = id;
+            var self = this;
+            var user_id = id;
             // window.location.hash = "#comments";
              //判断设备型号
-             let ua = navigator.userAgent.toLowerCase();
+             var ua = navigator.userAgent.toLowerCase();
              //Android终端
-             let isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1;
+             var isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1;
              //Ios终端
-             let isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+             var isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
              if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                  //Ios
-                 let data = {user_id:user_id};
+                 var data = {user_id:user_id};
                  window.webkit.messageHandlers.follow.postMessage(data);
                  self.userInformation.is_follow = 1;
              } else if (/(Android)/i.test(navigator.userAgent)) {
@@ -319,13 +319,13 @@ $('.input-send').click(function () {
         },
         //文章投诉
         reportArticle:function(id){
-            let article_id = id;
+            var article_id = id;
             //判断设备型号
-            let ua = navigator.userAgent.toLowerCase();
+            var ua = navigator.userAgent.toLowerCase();
             //Android终端
-            let isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1;
+            var isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1;
             //Ios终端
-            let isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+            var isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 //Ios
                 var data = {article_id:article_id};
@@ -338,18 +338,18 @@ $('.input-send').click(function () {
         },
         //收藏文章
         collectionArticles:function (id) {
-            let self = this;
-            let article_id = id;
+            var self = this;
+            var article_id = id;
             // window.location.hash = "#comments";
             //判断设备型号
-            let ua = navigator.userAgent.toLowerCase();
+            var ua = navigator.userAgent.toLowerCase();
             //Android终端
-            let isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1;
+            var isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1;
             //Ios终端
-            let isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+            var isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 //Ios
-                let data = {article_id:article_id};
+                var data = {article_id:article_id};
                 window.webkit.messageHandlers.collect.postMessage(data);
                 self.userInformation.is_collect = 1;
                 self.collectionshow = 1;
@@ -363,17 +363,17 @@ $('.input-send').click(function () {
         //取消收藏文章
         cancelCollection:function (id) {
 
-            let self = this;
-            let article_id = id;
+            var self = this;
+            var article_id = id;
             //判断设备型号
-            let ua = navigator.userAgent.toLowerCase();
+            var ua = navigator.userAgent.toLowerCase();
             //Android终端
-            let isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1;
+            var isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1;
             //Ios终端
-            let isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+            var isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 //Ios
-                let data = {article_id:article_id};
+                var data = {article_id:article_id};
                 window.webkit.messageHandlers.collect_cancel.postMessage(data);
                 self.collectionshow = 0;
                 self.userInformation.is_collect = 0;
@@ -397,7 +397,7 @@ $('.input-send').click(function () {
         },
         //点击播放音乐
         broadcast:function () {
-            let self = this;
+            var self = this;
             // self.musicPlay();
             if(audio.paused) {
                 $('.mp-article-music-migu-fixed').addClass('animation');
@@ -427,18 +427,18 @@ $('.input-send').click(function () {
         },
         // 判断滚动条是否到底
         judgeScrollBarToTheEnd () {
-            let innerHeight = document.querySelector('.active').clientHeight
+            var innerHeight = document.querySelector('.active').clientHeight
             // 变量scrollTop是滚动条滚动时，距离顶部的距离
-            let scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+            var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
             // 变量scrollHeight是滚动条的总高度
-            let scrollHeight = document.documentElement.clientHeight || document.body.scrollHeight
+            var scrollHeight = document.documentElement.clientHeight || document.body.scrollHeight
             // 滚动条到底部的条件
             if (scrollTop + scrollHeight >= innerHeight-1000) {
                 this.infiniteLoadDone()
             }
         },
         infiniteLoadDone () {
-            let self = this;
+            var self = this;
             //总页数
             if(self.totalCount >self.totalPage){
                 self.totalPage +=1;
@@ -461,10 +461,10 @@ $('.input-send').click(function () {
         },
     },
      created: function () {
-        let self = this;
-        let url = location.search; //获取url中"?"符后的字串
+        var self = this;
+        var url = location.search; //获取url中"?"符后的字串
          if (url.indexOf("?") != -1) {
-             let str = url.substr(1);
+             var str = url.substr(1);
              strs = str.split("&");
              self.articleID = decodeURIComponent(strs[0].replace("article_id=", ""));
              self.articleToken = decodeURIComponent(strs[1].replace("token=", ""));

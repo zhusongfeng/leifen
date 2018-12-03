@@ -1,0 +1,504 @@
+body, html {
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100%
+}
+/*.mp-article .mp-article-caption {
+    background-image: url('../image/1/bg.jpg')
+}*/
+/*.mp-article .mp-article-caption {
+    background-image: url('../image/2/bg.jpg')
+}*/
+/*.mp-article .mp-article-caption {
+    background-image: url('../image/3/bg.png')
+}*/
+/*紫色勿忘我*/
+/*.mp-article .mp-article-caption {
+    background-image: url('../image/img0/bg.png')
+}*/
+/*樱花*/
+/*.mp-article .mp-article-caption {
+     background-image: url('../image/img/bg.png')
+ }*/
+/*秋色*/
+/*.mp-article .mp-article-caption {
+    background-image: url('../image/img2/bg.png')
+}*/
+/*花瓣*/
+/*.mp-article .mp-article-caption {
+    background-image: url('../image/img3/bg.png')
+}*/
+/*蒲公英*/
+/*.mp-article .mp-article-caption {
+    background-image: url('../image/img4/bg.png')
+}*/
+
+.mp-article-bgfixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto
+}
+.mp-article-bgfixed.absolute {
+    position: absolute;
+    opacity: 0.3;
+}
+.mp-article {
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 100%;
+    background-position: top;
+    background-repeat: repeat;
+}
+
+.mp-article.auto {
+    background-size: auto auto
+}
+
+.mp-article.cover {
+    background-size: 100% auto
+}
+
+.mp-article .mp-article-foot, .mp-article .mp-article-head, .mp-article .mp-article-main, .mp-article .mp-article-tpl {
+    margin: 0 auto
+}
+
+.mp-article .mp-article-head {
+    overflow: hidden
+}
+
+.mp-article .mp-article-tpl {
+    min-height: 1rem;
+    position: relative;
+    z-index: 2
+}
+
+.mp-article .mp-article-main {
+    position: relative;
+    z-index: 1
+}
+
+.mp-article-animscene {
+    margin: 0 auto
+}
+
+.mp-article-bgfixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto
+}
+
+.mp-article-bgfixed.blur {
+    -webkit-filter: blur(.18rem);
+    filter: blur(.18rem)
+}
+
+.mp-article-bgfixed.contain {
+    background-size: contain
+}
+
+.mp-article-bgfixed.cover {
+    background-size: cover
+}
+
+.mp-article-bgfixed.absolute {
+    position: absolute
+}
+
+.mp-article-bgfixed.repeat {
+    background-size: 100% auto;
+    background-repeat: repeat-y
+}
+
+.mp-article-bgfixed .mp-article-bgfixed-mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background-repeat: repeat-y;
+    background-position: 0 100%
+}
+
+.mp-article-bgfixed .mp-article-bgfixed-mask-blur-a, .mp-article-bgfixed .mp-article-bgfixed-mask-blur-b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%
+}
+
+.mp-article .mp-article-tpl-cont {
+    position: relative
+}
+
+.mp-article .mp-article-tpl-cont > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    width: 1rem;
+    height: 1rem
+}
+
+.scene[data-v-1fbd1428] {
+    position: fixed;
+    height: 0;
+    z-index: 100000
+}
+
+@-webkit-keyframes left1543019634489 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 707px);
+        transform: translate(1rem, 707px);
+    }
+}
+
+@keyframes left1543019634489 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 707px);
+        transform: translate(1rem, 707px);
+    }
+}
+
+@-webkit-keyframes right1543019634489 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 707px);
+        transform: translate(1rem, 707px);
+    }
+}
+
+@keyframes right1543019634489 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 707px);
+        transform: translate(1rem, 707px);
+    }
+}
+
+@-webkit-keyframes clock1543019634489 {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes clock1543019634489 {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+/*樱花*/
+@-webkit-keyframes left1543144649407 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@keyframes left1543144649407 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@-webkit-keyframes right1543144649407 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@keyframes right1543144649407 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@-webkit-keyframes clock1543144649407 {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes clock1543144649407 {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+/*秋色*/
+
+@-webkit-keyframes left1543144542070 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@keyframes left1543144542070 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@-webkit-keyframes right1543144542070 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@keyframes right1543144542070 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@-webkit-keyframes clock1543144542070 {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes clock1543144542070 {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes left1543143803270 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@keyframes left1543143803270 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@-webkit-keyframes right1543143803270 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@keyframes right1543143803270 {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    to {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+}
+
+@-webkit-keyframes clock1543143803270 {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes clock1543143803270 {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+/*蒲公英*/
+
+@-webkit-keyframes left1543144580924 {
+    from {
+        -webkit-transform: translate(-1rem, 776px);
+        transform: translate(-1rem, 776px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes left1543144580924 {
+    from {
+        -webkit-transform: translate(-1rem, 776px);
+        transform: translate(-1rem, 776px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes right1543144580924 {
+    from {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes right1543144580924 {
+    from {
+        -webkit-transform: translate(1rem, 776px);
+        transform: translate(1rem, 776px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+
+
+
+
+.mp-article-caption {
+    margin: 0 auto !important;
+    padding-bottom: .3rem !important;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto
+}
+
+.mp-article-caption .mp-article-caption-wrap {
+    margin-left: .3rem;
+    margin-right: .3rem;
+    overflow: hidden
+}
+
+
+.mp-article-caption .mp-article-caption-tall {
+    margin-top: 4.62rem;
+    text-align: center
+}
